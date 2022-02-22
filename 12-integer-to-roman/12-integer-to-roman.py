@@ -17,8 +17,6 @@ class Solution:
         ]
         res = ''
         for (n, roman) in lookup:
-            print(n)
             (d, num) = divmod(num, n)
-            print(d,num)
             res += roman * d
         return res
